@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 const generatePage = (answers) => `
 
 # Project Title: ${answers.projectTitle}
-badge ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 ## Name: ${answers.userName}
 
@@ -18,9 +18,15 @@ badge ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmat
 
 [Usage](#Usage)
 
-[Licences](#Licenses)
+[Licences](#License)
+
+[Languages](#Languages)
 
 [Features](#Features)
+
+[Tests](#Tests)
+
+[Contributors](#Contributors)
 
 Description: 
 ${answers.description}
@@ -31,18 +37,25 @@ ${answers.installationPackages}
 Usage: 
 ${answers.usage}
 
+Languages: 
+${answers.languages}
+
 License:
 ${answers.licences}
 
 Features: 
 ${answers.Features}
 
-Tests - Need to add question
+Tests: 
+${answers.tests}
+
+Contributors: 
+${answers.contributors}
+
 Questions - Need to add questions
-Contribution guidelines - need to add
 `;
-//   ===================================================================================
-//   ===================================================================================
+//===================================================================================
+//===================================================================================
 const promptUser = () => {
     return inquirer.prompt([
 //user name question
@@ -64,7 +77,6 @@ const promptUser = () => {
                 }
             } 
         },
-
 //GitHub question
         {
             // what type of question is this? input means they will input something
@@ -116,12 +128,20 @@ const promptUser = () => {
                }
                            
         },
-//Table of contents questions
+//Tests
         {
             type: 'confirm',
-            name: 'TableofContents',
-            Message: 'Do you want a table of contents',
-            default: false,
+            name: 'tests',
+            Message: 'What are some of the tests you created?',
+            validate: nameInput => {
+                if (nameInput) {
+                return true
+                }
+                 else {
+                console.log("Please enter the tests that you wrote")
+                return false
+                       }
+                   }
                            
         },
 //installation packages question
@@ -140,6 +160,21 @@ const promptUser = () => {
        }
                    
    },    
+// Contributors
+   {
+    type: 'input',
+    name: 'contributors',
+    Message: 'Who are the contributors for this project',
+    validate: nameInput => {
+        if (nameInput) {
+        return true
+        }
+         else {
+        console.log("Pleas provide details of the contributors for this pro")
+        return false
+               }
+           }                 
+},
 //Languages question
 {
     type: 'checkbox',
