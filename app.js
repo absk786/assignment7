@@ -11,14 +11,14 @@ const generatePage = (answers) => `
 ## Github: ${answers.userGitHub}
 
 ## Table of Contents:
-[Description](#Description)
-[Installation](#Installation)
-[Usage](#Usage)
-[Licences](#License)
-[Languages](#Languages)
-[Features](#Features)
-[Tests](#Tests)
-[Contributors](#Contributors)
+* [Description](#Description)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Licences](#License)
+* [Languages](#Languages)
+* [Features](#Features)
+* [Tests](#Tests)
+* [Contributors](#Contributors)
 
 -------------------------------------------------------------------------------------
 Description: 
