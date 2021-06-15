@@ -12,34 +12,34 @@ const generatePage = (answers) => `
 
 ## Table of Contents:
 * [Description](https://github.com/absk786/assignment7/blob/main/README.md#Description)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Licences](#License)
-* [Languages](#Languages)
-* [Features](#Features)
-* [Tests](#Tests)
+* [Installation](https://github.com/absk786/assignment7/blob/main/README.md#Installation)
+* [Usage](https://github.com/absk786/assignment7/blob/main/README.md#Usage)
+* [Licences](https://github.com/absk786/assignment7/blob/main/README.md#License)
+* [Languages](https://github.com/absk786/assignment7/blob/main/README.md#Languages)
+* [Features](https://github.com/absk786/assignment7/blob/main/README.md#Features)
+* [Tests](https://github.com/absk786/assignment7/blob/main/README.md#Tests)
 * [Contributors](https://github.com/absk786/assignment7/blob/main/README.md#Contributors)
 
 -------------------------------------------------------------------------------------
- Description: 
+### Description: 
 * ${answers.description}
 
-Installation: 
+### Installation: 
 * ${answers.installationPackages}
  
-Usage: 
+### Usage: 
 * ${answers.usage}
 
-Languages: 
+### Languages: 
 * ${answers.languages}
 
-License:
+### License:
 * ${answers.licences}
 
-Features: 
+### Features: 
 * ${answers.Features}
 
-Tests: 
+### Tests: 
 * ${answers.tests}
 
 ### Contributors: 
