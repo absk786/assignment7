@@ -1,52 +1,46 @@
 
 
-# Project Title: abduls poroject
+# Project Title: nn
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-## Name: Abdul
+## Name: abdul
 
-## Github: abdulhub
+## Github: ddd
 
 ## Table of Contents:
-
 [Description](#Description)
-
 [Installation](#Installation)
-
 [Usage](#Usage)
-
 [Licences](#License)
-
 [Languages](#Languages)
-
 [Features](#Features)
-
 [Tests](#Tests)
-
 [Contributors](#Contributors)
 
+-------------------------------------------------------------------------------------
 Description: 
-das
+* jj
 
 Installation: 
-nmp inquirer
+* www
  
 Usage: 
-undefined
+* undefined
 
 Languages: 
-JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
+* JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
 
 License:
-undefined
+* undefined
 
 Features: 
-none
+* ddd
 
 Tests: 
-false
+* true
 
 Contributors: 
-none
+* wwww
 
-Questions - Need to add questions
+Questions
+* dddddd
