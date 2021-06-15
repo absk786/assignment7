@@ -11,11 +11,11 @@ badge ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmat
 ## Github: ${answers.userGitHub}
 
 ## Table of Contents:
-    ### [Description](#Description)
-    ### [Installation](#Installation)
-    ### [Usage](#Usage)
-    ### [Licences](#Licenses)
-    ### [Features](#Features)
+[Description](#Description)
+[Installation](#Installation)
+[Usage](#Usage)
+[Licences](#Licenses)
+[Features](#Features)
 
 Description: 
 ${answers.description}
