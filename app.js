@@ -9,7 +9,7 @@ const generatePage = (answers) => `
 ## Name: ${answers.userName}
 
 ## Github: ${answers.userGitHub}
-
+[GitHub](https://github.com/absk786)
 ## Table of Contents:
 * [Description](#Description)
 * [Installation](#Installation)
@@ -124,7 +124,7 @@ const promptUser = () => {
         },
 //Tests
         {
-            type: 'confirm',
+            type: 'input',
             name: 'tests',
             Message: 'What are some of the tests you created?',
             validate: nameInput => {
