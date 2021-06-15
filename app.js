@@ -3,32 +3,41 @@ const inquirer = require('inquirer');
 
 const generatePage = (answers) => `
 
+# Project Title: ${answers.projectTitle}
+badge ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-# Name: ${answers.userName}
+## Name: ${answers.userName}
 
 ## Github: ${answers.userGitHub}
 
-### Project Title: ${answers.projectTitle}
 ## Table of Contents:
-### [Description](#Description)
-### [Installation](#Installation)
-### [Usage](#Usage)
-### [Licences](#License)
-### [Features](#Features)
+    ### [Description](#Description)
+    ### [Installation](#Installation)
+    ### [Usage](#Usage)
+    ### [Licences](#Licenses)
+    ### [Features](#Features)
 
-### Description: 
+Description: 
 ${answers.description}
 
-Installation: ${answers.installationPackages}
+Installation: 
+${answers.installationPackages}
  
-### Usage: ${answers.userName}
+Usage: 
+${answers.usage}
 
-### License: ${answers.languages}
+License:
+${answers.licences}
 
-### Features: ${answers.Features}
+Features: 
+${answers.Features}
 
+Tests - Need to add question
+Questions - Need to add questions
+Contribution guidelines - need to add
 `;
-
+//   ===================================================================================
+//   ===================================================================================
 const promptUser = () => {
     return inquirer.prompt([
 //user name question
