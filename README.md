@@ -1,11 +1,11 @@
 
 
-# Project Title: yty
+# Project Title: git asdfas
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-## Name: ttttyyytty
+## Name: asdfa
 
-## [GitHub](https://github.com/absk786):ytyty
+## [GitHub](https://github.com/absk786)
 
 ## Table of Contents:
 * [Description](https://github.com/absk786/assignment7/blob/main/README.md#Description)
@@ -19,10 +19,10 @@
 
 -------------------------------------------------------------------------------------
 ### Description: 
-* yt
+* fas
 
 ### Installation: 
-* y
+* asd
  
 ### Usage: 
 * undefined
@@ -34,13 +34,13 @@
 * undefined
 
 ### Features: 
-* yt
+* asd
 
 ### Tests: 
-* y
+* df
 
 ### Contributors: 
-* ty
+* fas
 
 Questions
-* yt
+* fasdf

@@ -8,7 +8,7 @@ const generatePage = (answers) => `
 
 ## Name: ${answers.userName}
 
-## [GitHub](https://github.com/absk786):${answers.userGitHub}
+## [GitHub](https://github.com/${answers.userGitHub})
 
 ## Table of Contents:
 * [Description](https://github.com/absk786/assignment7/blob/main/README.md#Description)
