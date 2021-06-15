@@ -1,21 +1,25 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
-var profileDataArgs = process.argv.slice(2)
-// const [userName, gitHubName, projectTitle] = profileDataArgs 
+
 const generatePage = (answers) => `
-Name: ${answers.userName}
-Github: ${gitHubName}
-Project Title: ${projectTitle}
-//Description:
-// Table of Contents:
-// Installation:
-// Usage:
-// Credits:
-// License:
-// Badges:
-// Features: 
-// Contributing: 
-// Tests:
+# Name: ${answers.userName}
+
+## Github: ${answers.userGitHub}
+
+# Project Title: ${answers.projectTitle}
+
+Description: ${answers.description}
+
+Table of Contents: ${answers.TableofContents}
+
+Installation: ${answers.installationPackages}
+
+Usage: ${answers.userName}
+
+License: ${answers.languages}
+#
+Features: ${answers.Features}
+
 `;
 
 const promptUser = () => {
@@ -94,7 +98,7 @@ const promptUser = () => {
 //Table of contents questions
         {
             type: 'confirm',
-            name: 'Table of Contents',
+            name: 'TableofContents',
             Message: 'Do you want a table of contents',
             default: false,
                            
@@ -102,7 +106,7 @@ const promptUser = () => {
 //installation packages question
 {
     type: 'input',
-    name: 'Installation Packages',
+    name: 'installationPackages',
     Message: 'Please what packagaes you used',
     validate: nameInput => {
     if (nameInput) {
@@ -148,13 +152,14 @@ const promptUser = () => {
 ]);
 };
 promptUser()
-.then(answers => console.log(answers, answers.userName))
 .then(function (answers) {
 fs.writeFile("README.md", generatePage(answers), err =>{
 if (err) throw err
 console.log("md created")
 })})
 
+//   ===================================================================================
+//   ===================================================================================
 //  badges Question
 // {
 //     type: 'checkbox',
@@ -163,6 +168,3 @@ console.log("md created")
 //     choices: ['MIT', 'The Unlicense', 'Eclipse Public License 2.0', 'None']
         // default: false,
 //   },
-
-//   ===================================================================================
-//   ===================================================================================
