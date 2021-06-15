@@ -9,17 +9,15 @@ const generatePage = (answers) => `
 ## Github: ${answers.userGitHub}
 
 ### Project Title: ${answers.projectTitle}
-### Table of Contents:
-[Description]
-[Installation]
-[Usage]
-[Licences]
-[Features]
+## Table of Contents:
+### [Description](#Description)
+### [Installation](#Installation)
+### [Usage](#Usage)
+### [Licences](#License)
+### [Features](#Features)
 
 ### Description: 
 ${answers.description}
-
-### [Installation](#installation)
 
 Installation: ${answers.installationPackages}
  
