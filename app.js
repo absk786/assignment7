@@ -2,23 +2,32 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 
 const generatePage = (answers) => `
+
+
 # Name: ${answers.userName}
 
 ## Github: ${answers.userGitHub}
 
-# Project Title: ${answers.projectTitle}
+### Project Title: ${answers.projectTitle}
+### Table of Contents:
+[Description]
+[Installation]
+[Usage]
+[Licences]
+[Features]
 
-Description: ${answers.description}
+### Description: 
+${answers.description}
 
-Table of Contents: ${answers.TableofContents}
+### [Installation](#installation)
 
 Installation: ${answers.installationPackages}
+ 
+### Usage: ${answers.userName}
 
-Usage: ${answers.userName}
+### License: ${answers.languages}
 
-License: ${answers.languages}
-#
-Features: ${answers.Features}
+### Features: ${answers.Features}
 
 `;
 
