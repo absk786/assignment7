@@ -8,20 +8,20 @@ const generatePage = (answers) => `
 
 ## Name: ${answers.userName}
 
-## Github: ${answers.userGitHub}
-[GitHub](https://github.com/absk786)
+## [GitHub](https://github.com/absk786):${answers.userGitHub}
+
 ## Table of Contents:
-* [Description](#Description)
+* [Description](https://github.com/absk786/assignment7/blob/main/README.md#Description)
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Licences](#License)
 * [Languages](#Languages)
 * [Features](#Features)
 * [Tests](#Tests)
-* [Contributors](#Contributors)
+* [Contributors](https://github.com/absk786/assignment7/blob/main/README.md#Contributors)
 
 -------------------------------------------------------------------------------------
-Description: 
+ Description: 
 * ${answers.description}
 
 Installation: 
@@ -42,7 +42,7 @@ Features:
 Tests: 
 * ${answers.tests}
 
-Contributors: 
+### Contributors: 
 * ${answers.contributors}
 
 Questions
