@@ -11,48 +11,42 @@ const generatePage = (answers) => `
 ## Github: ${answers.userGitHub}
 
 ## Table of Contents:
-
 [Description](#Description)
-
 [Installation](#Installation)
-
 [Usage](#Usage)
-
 [Licences](#License)
-
 [Languages](#Languages)
-
 [Features](#Features)
-
 [Tests](#Tests)
-
 [Contributors](#Contributors)
 
+-------------------------------------------------------------------------------------
 Description: 
-${answers.description}
+* ${answers.description}
 
 Installation: 
-${answers.installationPackages}
+* ${answers.installationPackages}
  
 Usage: 
-${answers.usage}
+* ${answers.usage}
 
 Languages: 
-${answers.languages}
+* ${answers.languages}
 
 License:
-${answers.licences}
+* ${answers.licences}
 
 Features: 
-${answers.Features}
+* ${answers.Features}
 
 Tests: 
-${answers.tests}
+* ${answers.tests}
 
 Contributors: 
-${answers.contributors}
+* ${answers.contributors}
 
-Questions - Need to add questions
+Questions
+* ${answers.questions}
 `;
 //===================================================================================
 //===================================================================================
@@ -200,6 +194,21 @@ const promptUser = () => {
     }
      else {
     console.log("Please enter the different features of this app")
+    return false
+           }
+       }
+},
+// Email address
+{
+    type: 'input',
+    name: 'questions',
+    Message: 'Please enter your email address for future questions',
+    validate: nameInput => {
+    if (nameInput) {
+    return true
+    }
+     else {
+    console.log("Please enter your email address")
     return false
            }
        }
