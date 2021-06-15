@@ -1,18 +1,22 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 var profileDataArgs = process.argv.slice(2)
-const [userName, gitHubName, projectTitle] = profileDataArgs 
+// const [userName, gitHubName, projectTitle] = profileDataArgs 
 const generatePage = (answers) => `
-Name: ${userName}
+Name: ${answers.userName}
 Github: ${gitHubName}
 Project Title: ${projectTitle}
+//Description:
+// Table of Contents:
+// Installation:
+// Usage:
+// Credits:
+// License:
+// Badges:
+// Features: 
+// Contributing: 
+// Tests:
 `;
-
-// this creates the file and writes to it
-fs.writeFile("README.md", generatePage(userName, gitHubName,projectTitle), err =>{
-    if (err) throw err
-console.log("md created")
-});
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -139,8 +143,17 @@ const promptUser = () => {
     return false
            }
        }
-                   
 },
+
+]);
+};
+promptUser()
+.then(answers => console.log(answers, answers.userName))
+.then(function (answers) {
+fs.writeFile("README.md", generatePage(answers), err =>{
+if (err) throw err
+console.log("md created")
+})})
 
 //  badges Question
 // {
@@ -150,24 +163,6 @@ const promptUser = () => {
 //     choices: ['MIT', 'The Unlicense', 'Eclipse Public License 2.0', 'None']
         // default: false,
 //   },
-    ]);
-  };
-  promptUser()
-  .then(answers => console.log(answers))
-  .then(answers => generatePage(answers) )
-
-
 
 //   ===================================================================================
 //   ===================================================================================
-// USER LATER***
-//   Description: ${description}
-// Table of Contents:
-// Installation:
-// Usage:
-// Credits:
-// License:
-// Badges:
-// Features: 
-// Contributing: 
-// Tests:
