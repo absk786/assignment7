@@ -1,9 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-let MIT = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-let ISC = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-let APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
 // let badgesArr = [
 //     {
 //         name: "MIT",
@@ -69,7 +66,7 @@ const generatePage = (answers) => `
 * ${answers.languages}
 
 ### License:
-* ${answers.licences}
+* ${answers.lic}
 
 ### Features: 
 * ${answers.Features}
@@ -86,6 +83,10 @@ Questions
 //===================================================================================
 //===================================================================================
 const promptUser = () => {
+var MIT = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+var ISC = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+var APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+
     return inquirer.prompt([
 //user name question
         {
@@ -214,9 +215,10 @@ const promptUser = () => {
 //License Question
 {
     type: 'checkbox',
-    name: 'Licenses',
-    message: 'What License did you build this project with? (Check all that apply)',
-    choices: [MIT, ISC, APACHE, 'None']
+    name: 'lic',
+    message: 'What did you build this license',
+    choices: [MIT, 'MIT', 'Lic1']
+
   },
 // Features Question
 {
@@ -252,6 +254,7 @@ const promptUser = () => {
 };
 promptUser()
 .then(function (answers) {
+    console.log(answers.lic)
 fs.writeFile("README.md", generatePage(answers), err =>{
 if (err) throw err
 console.log("MD created")
