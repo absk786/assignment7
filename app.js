@@ -217,7 +217,7 @@ var APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue
     type: 'checkbox',
     name: 'lic',
     message: 'What did you build this license',
-    choices: [MIT, 'MIT', 'Lic1']
+    choices: [MIT, ISC, APACHE, "None"]
 
   },
 // Features Question
