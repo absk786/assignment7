@@ -1,9 +1,9 @@
 
 
-# Project Title: git asdfas
+# Project Title: dd
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-## Name: asdfa
+## Name: abdul
 
 ## [GitHub](https://github.com/absk786)
 
@@ -19,28 +19,28 @@
 
 -------------------------------------------------------------------------------------
 ### Description: 
-* fas
+* ddafad
 
 ### Installation: 
-* asd
+* daf
  
 ### Usage: 
 * undefined
 
 ### Languages: 
-* 
+* JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
 
 ### License:
 * undefined
 
 ### Features: 
-* asd
+* asdfasdf
 
 ### Tests: 
-* df
+* adfasdf
 
 ### Contributors: 
-* fas
+* adf
 
 Questions
-* fasdf
+* adsfasd

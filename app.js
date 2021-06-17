@@ -1,6 +1,41 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
+let MIT = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+let ISC = "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
+let APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+// let badgesArr = [
+//     {
+//         name: "MIT",
+//         string: "the link to site"
+//     }, 
+//     {
+//         name: "ISC",
+//         string: "the site"
+//     }
+// ]
+// let userBadge 
+// const badges = function (MIT, ISC, APACHE) {
+
+//     userBadge = badgesArr.filter((a, i) => {
+        
+//     });
+
+
+    // if (MIT) {
+    //     console.log(MIT)
+    //     //userBadge = MIT
+    //     userBadge = 
+    // }
+    // if (ISC) {
+    //     console.log(ISC)
+    // }
+    // if (APACHE ) {
+    //     console.log(APACHE)
+    // }
+// }
+
+
 const generatePage = (answers) => `
 
 # Project Title: ${answers.projectTitle}
@@ -181,7 +216,7 @@ const promptUser = () => {
     type: 'checkbox',
     name: 'Licenses',
     message: 'What License did you build this project with? (Check all that apply)',
-    choices: ['MIT', 'The Unlicense', 'Eclipse Public License 2.0', 'None']
+    choices: [MIT, ISC, APACHE, 'None']
   },
 // Features Question
 {
@@ -213,23 +248,12 @@ const promptUser = () => {
            }
        }
 },
-
 ]);
 };
 promptUser()
 .then(function (answers) {
 fs.writeFile("README.md", generatePage(answers), err =>{
 if (err) throw err
-console.log("md created")
+console.log("MD created")
 })})
 
-//   ===================================================================================
-//   ===================================================================================
-//  badges Question
-// {
-//     type: 'checkbox',
-//     name: 'Badges',
-//     message: 'Do you want a badge?',
-//     choices: ['MIT', 'The Unlicense', 'Eclipse Public License 2.0', 'None']
-        // default: false,
-//   },
