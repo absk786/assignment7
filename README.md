@@ -1,11 +1,11 @@
 
 
-# Project Title: asdfasd
+# Project Title: Professional Readme Generator
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
-## Name: asdfasdf
+## Name: Abdul 
 
-## [GitHub](https://github.com/dfsadsfads)
+## [GitHub](https://github.com/absk786)
 
 ## Table of Contents:
 * [Description](https://github.com/absk786/assignment7/blob/main/README.md#Description)
@@ -19,28 +19,28 @@
 
 -------------------------------------------------------------------------------------
 ### Description: 
-* fadsasdfasdf
+* This project involved working with nodejs and npm packages such as inquirer to generate a readme via the cmd line
 
 ### Installation: 
-* asdfasd
+* Inquirer
  
 ### Usage: 
 * undefined
 
 ### Languages: 
-* JavaScript,HTML,CSS,ES6,jQuery,Bootstrap,Node
+* 
 
 ### License:
-* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT),[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC),[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0),None
+* MIT[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Features: 
-* asdfasdf
+* No specific featuers
 
 ### Tests: 
-* asdfasd
+* No tests present
 
 ### Contributors: 
-* asdfasd
+* No contributers yet
 
 Questions
-* adsfasd
+* no questions
