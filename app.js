@@ -114,14 +114,14 @@ var APACHE = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue
             // where is the response being stored? as name = bob
             name: 'userGitHub',
             // what is the question?
-            message: 'What is your GitHub Link(Required)',
+            message: 'What is your GitHub username(Required)',
             // this will set the validation of the message making it a required field
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 }
                 else {
-                    console.log("Please enter your github link")
+                    console.log("Please enter your github username")
                     return false;
                 }
             } 
