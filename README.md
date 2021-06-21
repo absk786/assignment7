@@ -19,10 +19,10 @@
 
 -------------------------------------------------------------------------------------
 ### Description: 
-* this project generates a readme.md from the command line
+* In this project we were required to generate a readme.md from the command prompt 
 
 ### Installation: 
-* inquirer 
+* Inquirer and NPM modules
  
 ### Usage: 
 * undefined
@@ -34,13 +34,13 @@
 * MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Features: 
-* Features such as link repo, functional table of contents 
+* No spefic features 
 
 ### Tests: 
-* no tests are added
+* No tests are added to this project
 
 ### Contributors: 
-* Others are welcome to contribute to the project by finding bugs and suggesting changes
+* Others are welcome to contribute to the project
 
 Questions
-* if you have any further questions please email me on rehmank11@gmail.com
+* If you want to ask anyquestions or get in touch please email at rehmank11@gmail.com
