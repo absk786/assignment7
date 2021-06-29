@@ -1,6 +1,6 @@
 
 
-# Project Title: Proffesional Readme Generator
+# Project Title: Proffesional Readme generator
 ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 ## Name: Abdul
@@ -19,28 +19,28 @@
 
 -------------------------------------------------------------------------------------
 ### Description: 
-* In this project we were required to generate a readme.md from the command prompt 
+* in this project we used node, inquirer, and npm packages to generate a proffesional readme
 
 ### Installation: 
-* Inquirer and NPM modules
+* npm inquirer
  
 ### Usage: 
 * undefined
 
 ### Languages: 
-* JavaScript,ES6,Node
+* 
 
 ### License:
-* MIT [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+* 
 
 ### Features: 
-* No spefic features 
+* there are no features
 
 ### Tests: 
-* No tests are added to this project
+* there are no tests written for this
 
 ### Contributors: 
-* Others are welcome to contribute to the project
+* other contributors are welcome
 
 Questions
-* If you want to ask anyquestions or get in touch please email at rehmank11@gmail.com
+* for any questions please email me at rehmank11@gmail.com
